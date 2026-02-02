@@ -1,5 +1,6 @@
 import leia = require("readline-sync");
-import Stack = require("../Stack");
+import { Stack } from "../Stack";
+
 
 
 const fila = new Stack<string>();

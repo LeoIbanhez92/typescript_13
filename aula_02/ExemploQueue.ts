@@ -1,6 +1,7 @@
 import leia = require("readline-sync");
+import { Queue } from "./Queue";
 
-import Queue = require("./Queue");
+
 
 const fila = new Queue<string>();
 

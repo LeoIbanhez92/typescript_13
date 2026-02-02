@@ -9,7 +9,7 @@ interface stackInterface<Type> {
     clear(): void;
 }
 
-class Stack<Type> implements stackInterface<Type> {
+export class Stack<Type> implements stackInterface<Type> {
 
     private StackData: Array<Type> = [];
 
@@ -26,7 +26,7 @@ class Stack<Type> implements stackInterface<Type> {
 
     pop(): Type | undefined {
         if (this.isEmpty()) {
-            console.log("A pilha está vazia");
+            console.log("A fila está vazia");
             return;
         } else {
             var element = this.StackData.pop();
@@ -68,5 +68,3 @@ class Stack<Type> implements stackInterface<Type> {
     }
 
 }
-
-export = Stack;
